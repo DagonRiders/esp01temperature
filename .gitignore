@@ -1,3 +1,6 @@
+# Config file - don't commit this as it contains our wifi password!
+config.lua
+
 # Compiled Lua sources
 luac.out
 
