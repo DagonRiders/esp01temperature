@@ -1,8 +1,5 @@
 function wificonnect()
     wifi.setmode(wifi.STATION)
-    station_cfg={}
-    station_cfg.ssid="DagonsRoost" -- NB: case sensitive!
-    station_cfg.pwd="sleepingdagon"
     wifi.sta.config(station_cfg)
     tmr.alarm(1, 1000, 1, function()
         if wifi.sta.status() == wifi.STA_GOTIP then
